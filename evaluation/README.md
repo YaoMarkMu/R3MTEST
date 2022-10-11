@@ -46,7 +46,7 @@ You should see R3M get ~60% success on the first eval, while CLIP will get ~30%.
 muyao
 
 ```
-CUDA_VISIBLE_DEVICES=[1,2,3] python -m r3meval.core.hydra_launcher hydra/launcher=local hydra/output=local env="kitchen_sdoor_open-v3" camera="left_cap2" pixel_based=true embedding=resnet50 num_demos=5 env_kwargs.load_path=r3m bc_kwargs.finetune=false proprio=9 job_name=r3m_repro seed=125
+CUDA_VISIBLE_DEVICES=2 python -m r3meval.core.hydra_launcher hydra/launcher=local hydra/output=local env="kitchen_sdoor_open-v3" camera="left_cap2" pixel_based=true embedding=resnet50 num_demos=5 env_kwargs.load_path=r3m bc_kwargs.finetune=false proprio=9 job_name=r3m_repro seed=125
 
 ```
 
